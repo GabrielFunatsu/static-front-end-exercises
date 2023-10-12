@@ -5,9 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário</title>
   <link rel="stylesheet" href="styles/general-styles.css">
-  <link rel="stylesheet" href="styles/main-styles.css">
+  <link rel="stylesheet" href="styles/main-styles.css ">
 </head>
 <body>
-  
+  <main>
+    <h1>Formulário de Avaliação do Usuário</h1>
+
+    <form>
+      <div>
+        <label for="firstname">Nome:</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Nome">
+      </div>
+      <div>
+        <label for="lastname">Sobrenome:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Sobrenome">
+      </div>
+      <div>
+        <label for="birthday">Data de Nascimento:</label>
+        <input type="date" id="birthday" name="birthday">
+      </div>
+      <div>
+        <label for="gender">Gênero:</label>
+        <select name="gender" id="gender">
+          <option value="" disabled selected>Selecione...</option>
+          <option value="not-answer">Prefiro não responder</option>
+          <option value="female">Feminino</option>
+          <option value="male">Masculino</option>
+          <option value="gender-fluid">Não-binário</option>
+          <option value="transgender">Transgênero</option>
+        </select>
+      </div>
+      <div>
+        <p>Avaliação: </p>
+        <div>
+          <div>
+            <label for="1">1</label>
+            <input type="radio" name="1" id="1">
+          </div>
+          <div>
+            <label for="2">2</label>
+            <input type="radio" name="2" id="2">
+          </div>
+          <div>
+            <label for="3">3</label>
+            <input type="radio" name="3" id="3">
+          </div>
+          <div>
+            <label for="4">4</label>
+            <input type="radio" name="4" id="4">
+          </div>
+          <div>
+            <label for="5">5</label>
+            <input type="radio" name="5" id="5">
+          </div>
+        </div>
+      </div>
+      <div>
+        <label for="review">Mensagem de avaliação:</label>
+        <textarea type="text" id="review" name="review" rows="4" cols="50"></textarea>
+      </div>
+      <input type="submit" value="submit">
+    </form>
+  </main>
 </body>
 </html>
