@@ -6,40 +6,47 @@
   <title>Formulário</title>
   <link rel="stylesheet" href="styles/general-styles.css">
   <link rel="stylesheet" href="styles/main-styles.css ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
   <main>
     <h1>Formulário de Feedback</h1>
-
-    <form>
-      <div>
-        <label for="firstname">Nome:</label>
-        <input type="text" id="firstname" name="firstname" placeholder="Nome">
-      </div>
-      <div>
-        <label for="lastname">Sobrenome:</label>
-        <input type="text" id="lastname" name="lastname" placeholder="Sobrenome">
-      </div>
-      <div>
-        <label for="birthday">Data de Nascimento:</label>
-        <input type="date" id="birthday" name="birthday">
-      </div>
-      <div>
-        <label for="gender">Gênero:</label>
-        <select name="gender" id="gender">
-          <option value="" disabled selected>Selecione...</option>
-          <option value="not-answer">Prefiro não responder</option>
-          <option value="female">Feminino</option>
-          <option value="male">Masculino</option>
-          <option value="gender-fluid">Não-binário</option>
-          <option value="transgender">Transgênero</option>
-        </select>
-      </div>
-      <div>
-        <legend>Avaliação:</legend>
+    <form action="" method="">
+      <div class="name-lastname-container container">
         <div>
+          <label class="description" for="firstname">Nome:</label>
+          <input type="text" id="firstname" name="firstname" placeholder="Nome" required>
+        </div>
+        <div>
+          <label class="description" for="lastname">Sobrenome:</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Sobrenome" required>
+        </div>
+      </div>
+
+      <div class="general-info-container container">
+        <div>
+          <label class="description" for="birthday">Data de Nascimento:</label>
+          <input type="date" id="birthday" name="birthday" required>
+        </div>
+        <div>
+          <label class="description" for="gender">Gênero:</label>
+          <select name="gender" id="gender" required>
+            <option value="" disabled selected>Selecione...</option>
+            <option value="not-answer">Prefiro não responder</option>
+            <option value="female">Feminino</option>
+            <option value="male">Masculino</option>
+            <option value="gender-fluid">Não-binário</option>
+            <option value="transgender">Transgênero</option>
+          </select>
+        </div>
+      </div>
+      <div class="container">
+        <legend class="description">Nota:</legend>
+        <div class="rating-container">
             <label for="rating-1">1</label>
-            <input type="radio" name="rating" id="rating-1">
+            <input type="radio" name="rating" id="rating-1" required>
           
             <label for="rating-2">2</label>
             <input type="radio" name="rating" id="rating-2">
@@ -54,11 +61,11 @@
             <input type="radio" name="rating" id="rating-5">
         </div>
       </div>
-      <div>
-        <label for="review">Mensagem:</label>
+      <div class="container">
+        <label class="description" for="review">Mensagem:</label>
         <textarea type="text" id="review" name="review" rows="4" cols="50" placeholder="Descreva como foi sua experiência..."></textarea>
       </div>
-      <input type="submit" value="submit">
+      <input class="submit-button" type="submit" value="submit">
     </form>
   </main>
 </body>
