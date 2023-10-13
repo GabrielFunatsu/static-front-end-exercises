@@ -9,7 +9,7 @@
 </head>
 <body>
   <main>
-    <h1>Formulário de Avaliação do Usuário</h1>
+    <h1>Formulário de Feedbak</h1>
 
     <form>
       <div>
@@ -36,33 +36,27 @@
         </select>
       </div>
       <div>
-        <p>Avaliação: </p>
+        <legend>Avaliação:</legend>
         <div>
-          <div>
-            <label for="1">1</label>
-            <input type="radio" name="1" id="1">
-          </div>
-          <div>
-            <label for="2">2</label>
-            <input type="radio" name="2" id="2">
-          </div>
-          <div>
-            <label for="3">3</label>
-            <input type="radio" name="3" id="3">
-          </div>
-          <div>
-            <label for="4">4</label>
-            <input type="radio" name="4" id="4">
-          </div>
-          <div>
-            <label for="5">5</label>
-            <input type="radio" name="5" id="5">
-          </div>
+            <label for="rating-1">1</label>
+            <input type="radio" name="rating" id="rating-1">
+          
+            <label for="rating-2">2</label>
+            <input type="radio" name="rating" id="rating-2">
+          
+            <label for="rating-3">3</label>
+            <input type="radio" name="rating" id="rating-3">
+          
+            <label for="rating-4">4</label>
+            <input type="radio" name="rating" id="rating-4">
+          
+            <label for="rating-5">5</label>
+            <input type="radio" name="rating" id="rating-5">
         </div>
       </div>
       <div>
-        <label for="review">Mensagem de avaliação:</label>
-        <textarea type="text" id="review" name="review" rows="4" cols="50"></textarea>
+        <label for="review">Mensagem:</label>
+        <textarea type="text" id="review" name="review" rows="4" cols="50" placeholder="Descreva como foi sua experiência..."></textarea>
       </div>
       <input type="submit" value="submit">
     </form>
