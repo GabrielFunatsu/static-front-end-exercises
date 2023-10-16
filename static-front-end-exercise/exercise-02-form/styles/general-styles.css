@@ -3,3 +3,16 @@ body {
   font-family: Roboto, sans-serif;
   color: white;
 }
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 600px;
+  margin: 0 auto;
+  padding: 40px 25px;
+}
