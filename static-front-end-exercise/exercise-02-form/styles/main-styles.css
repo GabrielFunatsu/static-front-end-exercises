@@ -1,20 +1,46 @@
 .container {
-  display: flex;
   margin-bottom: 20px;
 }
 
-#firstname, #lastname, #birthday, #review {
+#firstname, #email, #birthday, #review {
   border-radius: 5px;
   outline: none;
 }
 
-.name-lastname-container, .general-info-container {
+#firstname, #email{
+  width: 100%
+}
+
+.general-info-container {
+  display: flex;
   justify-content: space-between;
+  width: 500px;
 }
 
 .rating-container {
   display: flex;
   justify-content: space-between;
-  border: 2px solid blue;
-  vertical-align: middle;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.rating {
+  display: flex;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.submit-button {
+  border: 4px solid white;
+  background-color: rgb(4, 16, 37);
+  color: white;
+  border-radius: 8px;
+  height: 60px;
+  width: 200px;
+  font-size: 20px;
+  margin-top: 20px;
 }

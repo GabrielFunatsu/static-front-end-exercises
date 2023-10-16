@@ -14,55 +14,71 @@
   <main>
     <h1>Formulário de Feedback</h1>
     <form action="https://nocodeform.io/f/652d7d73fd97c2eb08c20e77" method="POST">
-      <div class="name-lastname-container container">
+      <div class="name-container container">
         <label class="description" for="firstname">Nome:</label>
         <input type="text" id="firstname" name="firstname" placeholder="Nome" required>
       </div>
-      <div class="name-lastname-container container">
-        <label class="description" for="lastname">Sobrenome:</label>
-        <input type="text" id="lastname" name="lastname" placeholder="Sobrenome" required>
+
+      <div class="email-container container">
+        <label class="description" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
       </div>
 
       <div class="general-info-container container">
-        <label class="description" for="birthday">Data de Nascimento:</label>
-        <input type="date" id="birthday" name="birthday" required>
-      </div>
-      <div class="general-info-container container">
-        <label class="description" for="gender">Gênero:</label>
-        <select name="gender" id="gender" required>
-          <option value="" disabled selected>Selecione...</option>
-          <option value="not-answer">Prefiro não responder</option>
-          <option value="female">Feminino</option>
-          <option value="male">Masculino</option>
-          <option value="gender-fluid">Não-binário</option>
-          <option value="transgender">Transgênero</option>
-        </select>
+        <div>
+          <label class="description" for="birthday">Data de Nascimento:</label>
+          <input type="date" id="birthday" name="birthday" required>
+        </div>
+        <div>
+          <label class="description" for="gender">Gênero:</label>
+          <select name="gender" id="gender" required>
+            <option value="" disabled selected>Selecione...</option>
+            <option value="not-answer">Prefiro não responder</option>
+            <option value="female">Feminino</option>
+            <option value="male">Masculino</option>
+            <option value="gender-fluid">Não-binário</option>
+            <option value="transgender">Transgênero</option>
+          </select>
+        </div>
       </div>
 
       <div class="container">
         <legend class="description">Nota:</legend>
         <div class="rating-container">
+
+          <div class="rating">
             <label for="rating-1">1</label>
             <input type="radio" name="rating" id="rating-1"  value="1"required>
+          </div>
           
+          <div class="rating">
             <label for="rating-2">2</label>
             <input type="radio" name="rating" id="rating-2" value="2">
+          </div>
           
+          <div class="rating">
             <label for="rating-3">3</label>
             <input type="radio" name="rating" id="rating-3" value="3">
+          </div>
           
+          <div class="rating">
             <label for="rating-4">4</label>
             <input type="radio" name="rating" id="rating-4" value="4">
+          </div>
           
+          <div class="rating">
             <label for="rating-5">5</label>
             <input type="radio" name="rating" id="rating-5" value="5">
+          </div>  
         </div>
       </div>
       <div class="container">
         <label class="description" for="review">Mensagem:</label>
         <textarea type="text" id="review" name="review" rows="4" cols="50" placeholder="Descreva como foi sua experiência..."></textarea>
       </div>
-      <input class="submit-button" type="submit" value="submit">
+      <div class="button-container">
+        <input class="submit-button" type="submit" value="Submit">
+      </div>
     </form>
   </main>
 </body>

@@ -16,3 +16,11 @@ form {
   margin: 0 auto;
   padding: 40px 25px;
 }
+
+label {
+  display: block;
+}
+
+textarea {
+  width: 100%;
+}
